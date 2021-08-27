@@ -34,7 +34,9 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 - axios
 - dayjs
 
-## tsc 错误记录
+## 问题记录
+
+### tsc 报错
 
 ```js
 // vue-router tsc-vue 报错
@@ -59,4 +61,16 @@ const routes: RouteRecordRaw[] = []
 
 // 全局mixins
 declare var dateFormat: Function;
+```
+
+### pre-commit
+
+修改~/.huskyrc 文件
+
+```bash
+# .huskyrc
+# See https://typicode.github.io/husky/#/?id=command-not-found
+# This loads nvm.sh and sets the correct PATH before running hook
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 ```
