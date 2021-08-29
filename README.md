@@ -30,6 +30,7 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 
 - ELement-plus
 - vue-router
+- vuex
 - sass
 - axios
 - dayjs

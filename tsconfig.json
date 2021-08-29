@@ -22,7 +22,9 @@
       "components": ["src/components/*"],
       "views": ["src/views/*"],
       "plugins": ["src/plugins", "src/plugins/*"],
-      "utils": ["src/utils/*"]
+      "utils": ["src/utils/*"],
+      "store": ["src/store"],
+      "store/*": ["src/store/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],

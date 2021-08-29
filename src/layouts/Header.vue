@@ -1,7 +1,8 @@
 <template>
   <header class="app-header">
     <el-button type="primary" size="mini">返回</el-button>
-    头部
+    <router-link to="/home">home</router-link>
+    <router-link to="/about">about</router-link>
   </header>
 </template>
 
@@ -11,12 +12,12 @@ import {
   getCurrentInstance,
   onMounted,
   defineExpose,
-} from "vue";
+} from 'vue';
 const { appContext } = getCurrentInstance() as ComponentInternalInstance;
 // 全局api
 const globalProperties = appContext.config.globalProperties;
-const name = "AppHeader";
-const color = "#fff";
+const name = 'AppHeader';
+const color = '#fff';
 
 defineExpose({
   name,
