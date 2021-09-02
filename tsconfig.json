@@ -3,6 +3,7 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
+    "jsx": "preserve",
     "allowSyntheticDefaultImports": true,
     // 忽略所有的声明文件（ *.d.ts）的类型检查。
     "skipLibCheck": true,

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 import styleImport from 'vite-plugin-style-import';
 // import vitePluginCompression from "vite-plugin-compression";
 
@@ -19,6 +20,7 @@ const port = 3000;
 export default defineConfig({
   plugins: [
     vue(),
+    vueJsx(),
     styleImport({
       libs: [
         {

@@ -8,9 +8,13 @@
 
 <script setup lang="ts">
 import { useState, useActions } from 'store/helpers';
-import { computed } from 'vue';
+import { computed, watch } from 'vue';
 
 const { num } = useState('count', ['num']);
+
+watch(num, (num, prenum) => {
+  console.log(num, prenum);
+});
 
 const numValue = computed(() => num.value);
 
