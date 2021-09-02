@@ -31,9 +31,9 @@ const ComponentA: ComponentCustomProps = {
   },
 };
 
-const ComponentB: AsyncComponentOptions = defineAsyncComponent(
+const ComponentB: ComponentCustomProps = defineAsyncComponent(
   () =>
-    new Promise((resolve: (value: AsyncComponentOptions) => void, reject) => {
+    new Promise((resolve: (value: ComponentCustomProps) => void, reject) => {
       setTimeout(() => {
         resolve({
           render(): JSX.Element {

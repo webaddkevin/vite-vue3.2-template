@@ -8,12 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import {
-  ComponentInternalInstance,
-  getCurrentInstance,
-  onMounted,
-  defineExpose,
-} from 'vue';
+import { ComponentInternalInstance, getCurrentInstance, onMounted } from 'vue';
 const { appContext } = getCurrentInstance() as ComponentInternalInstance;
 // 全局api
 const globalProperties = appContext.config.globalProperties;
