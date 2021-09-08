@@ -14,6 +14,10 @@ const routes: RouteRecordRaw[] = [
     path: '/component',
     component: () => import('views/component/index.vue'),
   },
+  {
+    path: '/emits',
+    component: () => import('views/emits/index.vue'),
+  },
 ];
 
 const router = createRouter({

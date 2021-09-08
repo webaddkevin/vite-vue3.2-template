@@ -1,4 +1,4 @@
-import "element-plus/packages/theme-chalk/src/base.scss";
+import 'element-plus/packages/theme-chalk/src/base.scss';
 import {
   ElButton,
   ElMenu,
@@ -8,7 +8,9 @@ import {
   ElTable,
   ElTableColumn,
   ElPagination,
-} from "element-plus";
+  ElInput,
+  ElDatePicker,
+} from 'element-plus';
 const components = [
   ElButton,
   ElMenu,
@@ -18,6 +20,8 @@ const components = [
   ElTable,
   ElTableColumn,
   ElPagination,
+  ElInput,
+  ElDatePicker,
 ];
 
 const plugins = [ElLoading, ElMessage];

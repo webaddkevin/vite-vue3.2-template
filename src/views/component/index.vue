@@ -8,7 +8,6 @@ import {
   withModifiers,
   ref,
   ComponentCustomProps,
-  AsyncComponentOptions,
   defineAsyncComponent,
 } from 'vue';
 
@@ -31,6 +30,9 @@ const ComponentA: ComponentCustomProps = {
   },
 };
 
+/**
+ * 异步组件
+ */
 const ComponentB: ComponentCustomProps = defineAsyncComponent(
   () =>
     new Promise((resolve: (value: ComponentCustomProps) => void, reject) => {

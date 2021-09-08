@@ -4,6 +4,7 @@
     <router-link to="/home">home</router-link>
     <router-link to="/about">about</router-link>
     <router-link to="/component">component</router-link>
+    <router-link to="/emits">emits</router-link>
   </header>
 </template>
 

@@ -35,13 +35,15 @@
 </template>
 
 <script setup lang="ts">
-import { PropType, withDefaults } from "vue";
+import { PropType, withDefaults } from 'vue';
 interface Props {
-  paginat?:boolean;
-  loading?:boolean;
+  paginat?: boolean;
+  loading?: boolean;
   columns: any[];
 }
-const props = withDefaults(defineProps<Props>(), {});
+const props = withDefaults(defineProps<Props>(), {
+  loading: false,
+});
 
 // const props = defineProps({
 //   paginat: Boolean,
